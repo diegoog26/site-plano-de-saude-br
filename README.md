@@ -1,7 +1,7 @@
 ![GitHub License](https://img.shields.io/github/license/diegoog26/hub-links?style=for-the-badge)
 
-# Curso de Aromaterapia
+# Plano de saúde BR
 
-Site divulgando o curso de Aromaterapia
+Site sobre plano de saúde
 ## Autor
 Diego de Oliveira Galdino
