@@ -1,0 +1,121 @@
+/*Layout*/
+
+:root{
+    --Azulescuro: #1205da;
+    --branco: #ffffff;
+}
+
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Yrsa", serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+/*Fim Layout*/
+
+/*SmartPhone Portrait*/
+header{
+    height: 70px;
+    background-color: var(--Azulescuro);
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
+    padding-left: 10px;
+    margin-top: 7px;
+}
+
+#check{
+    display: none;
+}
+
+label{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 4rem;
+    position: fixed;
+    right: 15px;
+    top: 1px;
+    bottom: 10px;
+}
+
+nav ul{
+    height: 100vh;
+    background-color: rgba(18, 5, 218, 0.5);
+    position: fixed;
+    right: -65%;
+    width: 65%;
+    top: 70px;
+    transition: all 0.5s;
+}
+
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--branco);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--branco);
+}
+/*SmartPhone Portrait*/
+
+/*SmartPhone Landscape*/
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+        background-color: #000;
+    }
+}
+/*SmartPhone landscape*/
+
+/*Tablet Portrait*/
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+        background-color:aqua;
+    }
+}
+/*Tablet Portrait*/
+
+/*Tablet Landscape*/
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+        background-color:bisque;
+    }
+}
+/*Tablet Landscape*/
+
+/*PC/Notebook*/
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+        background-color:darkgoldenrod;
+    }
+}
+/*PC/Notebook*/
+
+/*Full HD/4k*/
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+        background-color:coral;
+    }
+}
+/*Full HD/4k*/
