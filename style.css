@@ -79,7 +79,11 @@ nav ul li a{
 @media (min-width: 576px){
     .container{
         max-width: 540px;
-        background-color: #000;
+    }
+
+    nav ul {
+        width: 40%;
+        right: -40%;
     }
 }
 /*SmartPhone landscape*/
@@ -88,7 +92,6 @@ nav ul li a{
 @media (min-width: 768px){
     .container{
         max-width: 720px;
-        background-color:aqua;
     }
 }
 /*Tablet Portrait*/
@@ -97,7 +100,6 @@ nav ul li a{
 @media (min-width: 992px){
     .container{
         max-width: 960px;
-        background-color:bisque;
     }
 }
 /*Tablet Landscape*/
@@ -106,7 +108,6 @@ nav ul li a{
 @media (min-width: 1200px){
     .container{
         max-width: 1140px;
-        background-color:darkgoldenrod;
     }
 }
 /*PC/Notebook*/
@@ -115,7 +116,6 @@ nav ul li a{
 @media (min-width: 1400px){
     .container{
         max-width: 1320px;
-        background-color:coral;
     }
 }
 /*Full HD/4k*/
