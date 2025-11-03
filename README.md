@@ -5,3 +5,6 @@
 Site sobre plano de saúde
 ## Autor
 Diego de Oliveira Galdino
+
+## Acessar o site
+![](./img/qrcodehublink.png)
