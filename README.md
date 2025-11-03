@@ -7,4 +7,4 @@ Site sobre plano de saúde
 Diego de Oliveira Galdino
 
 ## Acessar o site
-![](./img/qrcodehublink.png)
+![](./img/qrcodekendra.png)
