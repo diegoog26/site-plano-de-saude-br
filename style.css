@@ -108,6 +108,37 @@ nav ul li a{
 @media (min-width: 1200px){
     .container{
         max-width: 1140px;
+        justify-content: space-between;
+    }
+    header{
+        height: 100px;
+    }
+    #logo img{
+        width: 164px;
+        height: 164px;
+    }
+        label{
+        display: none;
+    }
+        nav ul{
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    nav ul li{
+        border: none;
+        float: left;
+    }
+
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    nav ul li a:hover{
+        color: #daa520;
     }
 }
 /*PC/Notebook*/
