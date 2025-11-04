@@ -20,12 +20,22 @@ body{
     display: flex;
     margin: 0 auto;
 }
+
+.btn{
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 600;
+    background-color: var(--branco);
+    padding: 10px 35px;
+    color: #000;
+    border-radius: 50px;
+}
 /*Fim Layout*/
 
 /*SmartPhone Portrait*/
 header{
     height: 70px;
-    background-color: var(--Azulescuro);
+    background-color: var(--branco);
 }
 
 #logo img{
@@ -50,7 +60,7 @@ label{
 
 nav ul{
     height: 100vh;
-    background-color: rgba(18, 5, 218, 0.5);
+    background-color: rgba(18, 5, 218, 0.7);
     position: fixed;
     right: -65%;
     width: 65%;
@@ -65,7 +75,7 @@ nav ul{
 nav ul li{
     list-style: none;
     padding: 20px;
-    text-align: center;
+    text-align: right;
     border: 1px solid var(--branco);
 }
 
@@ -73,6 +83,34 @@ nav ul li a{
     text-decoration: none;
     color: var(--branco);
 }
+
+/*Principal*/
+main{
+    height: 50vh;
+    background: url(./img/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container{
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    color: var(--branco);
+    font-family: "Work Sans", sans-serif;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+main h2{
+    color: var(--branco);
+    font-family: "Work Sans", sans-serif;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
 /*SmartPhone Portrait*/
 
 /*SmartPhone Landscape*/
@@ -84,6 +122,14 @@ nav ul li a{
     nav ul {
         width: 40%;
         right: -40%;
+    }
+
+    main{
+        height: 75vh;
+    }
+    
+    main h1{
+        font-size: 2.5rem;
     }
 }
 /*SmartPhone landscape*/
@@ -102,6 +148,16 @@ nav ul li a{
         max-width: 960px;
     }
 }
+
+main h1{
+    font-size: 4.3rem;
+}
+
+main h2{
+    font-size: 2.4rem;
+}
+
+
 /*Tablet Landscape*/
 
 /*PC/Notebook*/
@@ -114,8 +170,8 @@ nav ul li a{
         height: 100px;
     }
     #logo img{
-        width: 164px;
-        height: 164px;
+        width: 100px;
+        height: 100px;
     }
         label{
         display: none;
@@ -135,10 +191,15 @@ nav ul li a{
 
     nav ul li a{
         font-size: 1.5rem;
+        color: #000;
     }
 
     nav ul li a:hover{
         color: #daa520;
+    }
+
+    main{
+        height: 85vh;
     }
 }
 /*PC/Notebook*/
@@ -148,5 +209,13 @@ nav ul li a{
     .container{
         max-width: 1320px;
     }
+}
+
+main h1{
+    font-size: 6rem;
+}
+
+main h2{
+    font-size: 4rem;
 }
 /*Full HD/4k*/
