@@ -1,18 +1,18 @@
 /*Layout*/
 
-:root{
+:root {
     --Azulescuro: #1205da;
     --branco: #ffffff;
 }
 
 /*CSS Reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Yrsa", serif;
 }
 
@@ -21,7 +21,7 @@ body{
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     font-size: 2.1rem;
     font-weight: 600;
@@ -30,26 +30,27 @@ body{
     color: #000;
     border-radius: 50px;
 }
+
 /*Fim Layout*/
 
 /*SmartPhone Portrait*/
-header{
+header {
     height: 70px;
     background-color: var(--branco);
 }
 
-#logo img{
-    width: 100px;
-    height: 100px;
+#logo img {
+    width: 80px;
+    height: 73px;
     padding-left: 10px;
     margin-top: 7px;
 }
 
-#check{
+#check {
     display: none;
 }
 
-label{
+label {
     color: rgba(0, 0, 0, 0.75);
     font-size: 4rem;
     position: fixed;
@@ -58,7 +59,7 @@ label{
     bottom: 10px;
 }
 
-nav ul{
+nav ul {
     height: 100vh;
     background-color: rgba(18, 5, 218, 0.7);
     position: fixed;
@@ -72,50 +73,53 @@ nav ul{
     right: 0px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     padding: 20px;
     text-align: right;
     border: 1px solid var(--branco);
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: var(--branco);
 }
 
 /*Principal*/
-main{
-    height: 50vh;
+main {
+    height: 55vh;
     background: url(./img/banner.png);
     background-size: cover;
     background-position: center;
 }
 
-main .container{
+main .container {
     height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-main h1{
+main h1 {
     color: var(--branco);
     font-family: "Work Sans", sans-serif;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
-main h2{
+
+main h2 {
+    font-size: 1rem;
     color: var(--branco);
     font-family: "Work Sans", sans-serif;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
 /*SmartPhone Portrait*/
 
 /*SmartPhone Landscape*/
-@media (min-width: 576px){
-    .container{
+@media (min-width: 576px) {
+    .container {
         max-width: 540px;
     }
 
@@ -124,59 +128,71 @@ main h2{
         right: -40%;
     }
 
-    main{
+    main {
         height: 75vh;
     }
-    
-    main h1{
+
+    main h1 {
         font-size: 2.5rem;
     }
 }
+
 /*SmartPhone landscape*/
 
 /*Tablet Portrait*/
-@media (min-width: 768px){
-    .container{
+@media (min-width: 768px) {
+    .container {
         max-width: 720px;
     }
+    main h1{
+        font-size: 4.3rem;
+    }
+    main h2{
+        font-size: 3.1rem;
+    }
 }
+
 /*Tablet Portrait*/
 
 /*Tablet Landscape*/
-@media (min-width: 992px){
-    .container{
+@media (min-width: 992px) {
+    .container {
         max-width: 960px;
     }
-}
 
-main h1{
-    font-size: 4.3rem;
-}
+    main h1 {
+        font-size: 4.3rem;
+    }
 
-main h2{
-    font-size: 2.4rem;
+    main h2 {
+        font-size: 2.4rem;
+    }
 }
 
 
 /*Tablet Landscape*/
 
 /*PC/Notebook*/
-@media (min-width: 1200px){
-    .container{
+@media (min-width: 1200px) {
+    .container {
         max-width: 1140px;
         justify-content: space-between;
     }
-    header{
+
+    header {
         height: 100px;
     }
-    #logo img{
+
+    #logo img {
         width: 100px;
         height: 100px;
     }
-        label{
+
+    label {
         display: none;
     }
-        nav ul{
+
+    nav ul {
         position: static;
         width: 100%;
         height: auto;
@@ -184,38 +200,40 @@ main h2{
         margin-top: 20px;
     }
 
-    nav ul li{
+    nav ul li {
         border: none;
         float: left;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 1.5rem;
         color: #000;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: #daa520;
     }
 
-    main{
+    main {
         height: 85vh;
     }
 }
+
 /*PC/Notebook*/
 
 /*Full HD/4k*/
-@media (min-width: 1400px){
-    .container{
+@media (min-width: 1400px) {
+    .container {
         max-width: 1320px;
+    }
+
+    main h1 {
+        font-size: 6rem;
+    }
+
+    main h2 {
+        font-size: 4rem;
     }
 }
 
-main h1{
-    font-size: 6rem;
-}
-
-main h2{
-    font-size: 4rem;
-}
 /*Full HD/4k*/
