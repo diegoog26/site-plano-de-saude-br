@@ -61,7 +61,7 @@ label {
 
 nav ul {
     height: 100vh;
-    background-color: rgba(18, 5, 218, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     position: fixed;
     right: -65%;
     width: 65%;
@@ -77,12 +77,12 @@ nav ul li {
     list-style: none;
     padding: 20px;
     text-align: right;
-    border: 1px solid var(--branco);
+    border-bottom: 1px solid var(--Azulescuro);
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--branco);
+    color: var(#000);
 }
 
 /*Principal*/
@@ -104,15 +104,65 @@ main h1 {
     color: var(--branco);
     font-family: "Work Sans", sans-serif;
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    font-size: 2.4rem;
 }
 
 main h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: var(--branco);
     font-family: "Work Sans", sans-serif;
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+}
+
+/*Destaque*/
+#Destaque {
+    padding: 50px 15px;
+    background: url(./img/MédicoEditado.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+#hero-text h2 {
+    margin-bottom: 10px;
+    color: var(--branco);
+}
+
+#hero-text p {
+    color: var(--branco);
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.topic img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.topic p {
+    color: var(--branco);
+    font-size: 1.5rem;
 }
 
 /*SmartPhone Portrait*/
@@ -135,8 +185,22 @@ main h2 {
     main h1 {
         font-size: 2.5rem;
     }
-}
 
+    #Destaque {
+        padding: 50px 0px;
+    }
+    #Destaque > .container{
+        flex-direction: column;
+    }
+    #hero{
+        text-align: left;
+    }
+    #hero img{
+        display: none;
+    }
+    .topic{
+    }
+}
 /*SmartPhone landscape*/
 
 /*Tablet Portrait*/
@@ -144,10 +208,12 @@ main h2 {
     .container {
         max-width: 720px;
     }
-    main h1{
+
+    main h1 {
         font-size: 4.3rem;
     }
-    main h2{
+
+    main h2 {
         font-size: 3.1rem;
     }
 }
@@ -216,6 +282,23 @@ main h2 {
 
     main {
         height: 85vh;
+    }
+    #hero img{
+        width: 400px;
+        height: 400px;
+        display: flex;
+    }
+
+    #Destaque .container{
+        flex-direction: row;
+    }
+
+    #hero-text{
+        margin-left: 20px;
+    }
+
+    #hero-text h2{
+        font-size: 3rem;
     }
 }
 
