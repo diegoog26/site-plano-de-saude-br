@@ -3,6 +3,7 @@
 :root {
     --Azulescuro: #1205da;
     --branco: #ffffff;
+    --AzulEscuro2: #111184;
 }
 
 /*CSS Reset*/
@@ -165,6 +166,31 @@ main h2 {
     font-size: 1.5rem;
 }
 
+#OnePage .container{
+    flex-direction: column;
+}
+
+#OnePage{
+    padding: 0px 10px;
+    background-color: var(--AzulEscuro2);
+}
+
+#texto h2{
+    margin-top: 50px;
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+
+#texto p{
+    margin-bottom: 15px;
+    color:var(--branco)
+}
+
+#video iframe{
+    height: 191px;
+    width: 340px;
+    margin-bottom: 10px;
+}
 /*SmartPhone Portrait*/
 
 /*SmartPhone Landscape*/
@@ -198,7 +224,9 @@ main h2 {
     #hero img{
         display: none;
     }
-    .topic{
+    #video iframe{
+        width: 560px;
+        height: 315px;
     }
 }
 /*SmartPhone landscape*/
@@ -215,6 +243,14 @@ main h2 {
 
     main h2 {
         font-size: 3.1rem;
+    }
+
+    #texto h2{
+        font-size: 2.4rem;
+    }
+
+    #texto p{
+        font-size: 1.5rem;
     }
 }
 
@@ -295,10 +331,25 @@ main h2 {
 
     #hero-text{
         margin-left: 20px;
+        height: 190px;
     }
 
     #hero-text h2{
-        font-size: 3rem;
+        font-size: 2.1rem;
+    }
+    
+    .topic{
+        height: 40px;
+        margin-left: 5px;
+        padding-top: 210px;
+    }
+
+    #OnePage .container{
+        flex-direction: row;
+    }
+
+    #video iframe{
+        margin-top: 50px;
     }
 }
 
