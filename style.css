@@ -119,7 +119,7 @@ main h2 {
 /*Destaque*/
 #Destaque {
     padding: 50px 15px;
-    background: url(./img/MédicoEditado.png);
+    background: url(./img/Novo\ fundo22.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -127,6 +127,8 @@ main h2 {
 
 #Destaque .container {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #hero {
@@ -137,16 +139,19 @@ main h2 {
     height: 300px;
     width: 300px;
     border-radius: 100%;
+    border: 6px solid var(--AzulEscuro2);
+    margin-right: 30px;
     margin-bottom: 30px;
 }
 
 #hero-text h2 {
     margin-bottom: 10px;
-    color: var(--branco);
+    color: #0332FF;
 }
 
-#hero-text p {
-    color: var(--branco);
+#hero-text p{
+    color: #0332FF;
+    font-size: 1.4rem;
 }
 
 .topic {
@@ -162,7 +167,6 @@ main h2 {
 }
 
 .topic p {
-    color: var(--branco);
     font-size: 1.5rem;
 }
 
@@ -176,7 +180,7 @@ main h2 {
 }
 
 #texto h2 {
-    margin-top: 50px;
+    margin-top: 30px;
     color: var(--branco);
     margin-bottom: 10px;
 }
@@ -189,13 +193,13 @@ main h2 {
 #video iframe {
     height: 191px;
     width: 340px;
-    margin-bottom: 10px;
+    margin: 30px 0px;
 }
 
 #wire {
     display: flex;
     padding: 5px 5px;
-    background: url(./img/MédicoEditado.png);
+    background: url(./img/Novo\ fundo22.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -203,7 +207,7 @@ main h2 {
 
 #wire .container {
     flex-direction: column;
-    height: 260px;
+    height: 400px;
 }
 
 #qrcode{
@@ -211,16 +215,16 @@ main h2 {
 }
 
 #texto2 h2{
-    color: var(--branco);
     margin-top: 30px;
     font-size: 2.1rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #0332FF;
 }
 
 #texto2 p{
-    color: var(--branco);
     font-size: 1.2rem;
+    color: #0332FF;
 }
 
 #pdf{
@@ -411,20 +415,23 @@ main h2 {
     }
 
     #video iframe {
-        margin-top: 50px;
+        margin: 40px;
+    }
+
+    #texto{
+        margin: 40px;
     }
 
     #wire .container{
-        height: 400px;
+        height: 300px;
         flex-direction: row;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     #qrcode{
         display: flex;
         height: 270px;
-        margin-top: 50px;
-        margin-left: 20px;
-
     }
 }
 
