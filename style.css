@@ -4,6 +4,7 @@
     --Azulescuro: #1205da;
     --branco: #ffffff;
     --AzulEscuro2: #111184;
+    --Preto: #000;
 }
 
 /*CSS Reset*/
@@ -30,6 +31,21 @@ body {
     padding: 10px 35px;
     color: #000;
     border-radius: 50px;
+    border: 3px solid var(--Preto)
+}
+
+.card{
+    width: 341px;
+    height: 520px;
+    background-color: #fffafa;
+    margin-bottom: 25px;
+    border: 2px solid var(--branco);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
 }
 
 /*Fim Layout*/
@@ -83,7 +99,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(#000);
+    color: var(--Preto);
 }
 
 /*Principal*/
@@ -242,7 +258,25 @@ main h2 {
     border: 3px solid var(--AzulEscuro2);
 }
 
+#cartao{
+    background-color: var(--AzulEscuro2);
+    padding: 50px 0px 25px 0px;
+}
 
+#cartao .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2{
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+
+.card p{
+    text-align: left;
+    padding: 0px 15px 30px 15px ;
+}
 
 /*SmartPhone Portrait*/
 
@@ -334,6 +368,15 @@ main h2 {
 
     main h2 {
         font-size: 2.4rem;
+    }
+
+    #cartao .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin-right: 25px;
     }
 }
 
@@ -432,6 +475,10 @@ main h2 {
     #qrcode{
         display: flex;
         height: 270px;
+    }
+
+    .card{
+        margin-right: 0px;
     }
 }
 
