@@ -172,11 +172,11 @@ main h2 {
 
 #hero-text h2 {
     margin-bottom: 10px;
-    color: #0332FF;
+    color: var(--Preto);
 }
 
 #hero-text p {
-    color: #0332FF;
+    color: var(--Preto);
     font-size: 1.4rem;
 }
 
@@ -245,12 +245,12 @@ main h2 {
     font-size: 2.1rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #0332FF;
+    color: var(--Preto)
 }
 
 #texto2 p {
     font-size: 1.2rem;
-    color: #0332FF;
+    color: var(--Preto)
 }
 
 #pdf {
@@ -310,7 +310,11 @@ main h2 {
 }
 
 #endereco{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+#telefone{
+    margin-top: 20px;
 }
 
 #endereco img{
@@ -321,6 +325,19 @@ main h2 {
     display: flex;
 }
 
+footer{
+    background-color: var(--branco);
+}
+
+footer .container{
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container #redes{
+    margin-bottom: 20px;
+}
 
 
 /*SmartPhone Portrait*/
@@ -364,6 +381,15 @@ main h2 {
         width: 560px;
         height: 315px;
     }
+
+    footer .container{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    footer .container #copyright{
+        margin-bottom: 15px;
+    }
 }
 
 /*SmartPhone landscape*/
@@ -396,6 +422,10 @@ main h2 {
 
     #texto2 p {
         font-size: 1.5rem;
+    }
+
+    footer .container{
+        justify-content: space-around;
     }
 }
 
@@ -535,6 +565,7 @@ main h2 {
     }
 
     #mapa p{
+        margin-bottom: 10px;
     }
 
     #endereco img{
@@ -544,6 +575,10 @@ main h2 {
     #contato .container{
         flex-direction: row;
         justify-content: space-around;
+    }
+
+        footer .container{
+        justify-content: space-between;
     }
 }
 
