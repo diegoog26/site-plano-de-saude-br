@@ -34,7 +34,7 @@ body {
     border: 3px solid var(--Preto)
 }
 
-.card{
+.card {
     width: 341px;
     height: 520px;
     background-color: #fffafa;
@@ -44,8 +44,18 @@ body {
     border-radius: 25px;
 }
 
-.card img{
+.card img {
     border-radius: 25px 25px 0px 0px;
+}
+
+#topo {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*Fim Layout*/
@@ -165,7 +175,7 @@ main h2 {
     color: #0332FF;
 }
 
-#hero-text p{
+#hero-text p {
     color: #0332FF;
     font-size: 1.4rem;
 }
@@ -226,11 +236,11 @@ main h2 {
     height: 400px;
 }
 
-#qrcode{
+#qrcode {
     display: none;
 }
 
-#texto2 h2{
+#texto2 h2 {
     margin-top: 30px;
     font-size: 2.1rem;
     font-weight: bold;
@@ -238,16 +248,16 @@ main h2 {
     color: #0332FF;
 }
 
-#texto2 p{
+#texto2 p {
     font-size: 1.2rem;
     color: #0332FF;
 }
 
-#pdf{
+#pdf {
     margin-top: 30px;
 }
 
-#pdf a{
+#pdf a {
     text-decoration: none;
     background-color: var(--branco);
     font-weight: 600;
@@ -258,25 +268,60 @@ main h2 {
     border: 3px solid var(--AzulEscuro2);
 }
 
-#cartao{
+#cartao {
     background-color: var(--AzulEscuro2);
     padding: 50px 0px 25px 0px;
 }
 
-#cartao .container{
+#cartao .container {
     flex-direction: column;
     align-items: center;
 }
 
-.card h2{
+.card h2 {
     font-size: 1.3rem;
     margin: 15px 0px;
 }
 
-.card p{
+.card p {
     text-align: left;
-    padding: 0px 15px 30px 15px ;
+    padding: 0px 15px 30px 15px;
 }
+
+#contato .container #mapa iframe {
+    display: none;
+}
+
+#contato{
+    background-color: #b3ebf2;
+}
+
+#contato .container{
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+#contato p{
+    font-size: 1.5rem;
+}
+
+#mapa{
+    margin-bottom: 2px;
+}
+
+#endereco{
+    margin-bottom: 15px;
+}
+
+#endereco img{
+    display: none;
+}
+
+#endereco #email img{
+    display: flex;
+}
+
+
 
 /*SmartPhone Portrait*/
 
@@ -345,11 +390,11 @@ main h2 {
         font-size: 1.5rem;
     }
 
-    #texto2 h2{
+    #texto2 h2 {
         font-size: 2.4rem;
     }
 
-    #texto2 p{
+    #texto2 p {
         font-size: 1.5rem;
     }
 }
@@ -370,12 +415,12 @@ main h2 {
         font-size: 2.4rem;
     }
 
-    #cartao .container{
+    #cartao .container {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .card{
+    .card {
         margin-right: 25px;
     }
 }
@@ -461,24 +506,44 @@ main h2 {
         margin: 40px;
     }
 
-    #texto{
+    #texto {
         margin: 40px;
     }
 
-    #wire .container{
+    #wire .container {
         height: 300px;
         flex-direction: row;
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    #qrcode{
+    #qrcode {
         display: flex;
         height: 270px;
     }
 
-    .card{
+    .card {
         margin-right: 0px;
+    }
+
+    #contato .container #mapa iframe {
+        display: flex;
+    }
+
+    #mapa a{
+        display: none;
+    }
+
+    #mapa p{
+    }
+
+    #endereco img{
+        display: flex;
+    }
+
+    #contato .container{
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
